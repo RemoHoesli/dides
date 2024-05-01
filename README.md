@@ -1,3 +1,3 @@
 # dides
 
-https://remohoesli.github.io/Mindfulness/
+https://remohoesli.github.io/dides-sprint/
