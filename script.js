@@ -1,18 +1,22 @@
+document.addEventListener('DOMContentLoaded', function () {
 
-
-
-var timeLeft = 30;
-    var elem = document.getElementById('some_div');
     
-    var timerId = setInterval(countdown, 1000);
+    var timeLeft = 5;
+    const rating = 4.0;
     
-    function countdown() {
-      if (timeLeft == -1) {
-        clearTimeout(timerId);
-        doSomething();
-      } else {
-        console.log(timeLeft+' seconds remaining');
-        timeLeft--;
-      }
-      console.log(timeLeft);
+        var timerId = setInterval(countdown, 1000);
+    
+        function countdown() {
+        if (timeLeft == 0) {
+            clearTimeout(timerId);
+            document.getElementById("Countdown").innerHTML = 'bruh';
+        } else {
+            console.log(timeLeft+' seconds remaining');
+            timeLeft--;
+            document.getElementById("Countdown").innerHTML = 'Time left ' + timeLeft;
+        }
     }
+
+    document.getElementById("rat").innerHTML = rating;
+
+});
