@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* Get current time
+    /*Get current time
     const now = new Date();
     const hours = now.getHours();
     const minutes = now.getMinutes();
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var first = 1.0; 
     var second = 1.0;
     var third = 1.0;
-    document.getElementById("first").innerHTML = first.toFixed(2);
-    document.getElementById("second").innerHTML = second.toFixed(2);
-    document.getElementById("third").innerHTML = third.toFixed(2);
+    document.getElementById("first").innerHTML = '1) '+first.toFixed(2);
+    document.getElementById("second").innerHTML = '2) '+second.toFixed(2);
+    document.getElementById("third").innerHTML = '3) '+third.toFixed(2);
 
     document.getElementById("button").addEventListener("click", function() {
 
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (ratingfinal > third) {
                     third = ratingfinal;
                 }
-                document.getElementById("first").innerHTML = first.toFixed(2);
-                document.getElementById("second").innerHTML = second.toFixed(2);
-                document.getElementById("third").innerHTML = third.toFixed(2);
+                document.getElementById("first").innerHTML = '1) '+first.toFixed(2);
+                document.getElementById("second").innerHTML = '2) '+second.toFixed(2);
+                document.getElementById("third").innerHTML = '3) '+third.toFixed(2);
             } else {
                 document.getElementById("spam").addEventListener("click", function() {
                     if (rating < 48) {
