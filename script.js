@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         button.style.transform = "translateX(100vw)";
         spam.style.transform = "translateX(0vw)";
 
-        var timeLeft = 5;
-        var rating = 40;        
+        var timeLeft = 10;
+        var rating = 0;        
         
         
-        var timerId = setInterval(countdown, 100);
+        var timerId = setInterval(countdown, 50);
     
         function countdown() {
             if (timeLeft < 0) {
@@ -44,21 +44,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (ratingfinal > third) {
                     third = ratingfinal;
                 }
+                document.getElementById("rat").innerHTML = ratingend.toFixed(2);
                 document.getElementById("first").innerHTML = '1) '+first.toFixed(2);
                 document.getElementById("second").innerHTML = '2) '+second.toFixed(2);
                 document.getElementById("third").innerHTML = '3) '+third.toFixed(2);
             } else {
                 document.getElementById("spam").addEventListener("click", function() {
-                    if (rating < 48) {
-                    rating += 0.2; 
+                    if (rating < 50) {
+                    rating += 0.05; 
                 }
                 });
                 console.log(timeLeft+' seconds remaining');
-                timeLeft -= 0.1;
-                rating /= 1.2;
+                timeLeft -= 0.05;
+                rating *= 0.95;
                 document.getElementById("Countdown").innerHTML = 'Time left ' + Math.ceil(timeLeft);
                 ratingend = rating / 10 + 1;
-                document.getElementById("rat").innerHTML = ratingend.toFixed(2);
+                document.getElementById("rat").innerHTML = ratingend.toFixed(1);
             }
         }
 
