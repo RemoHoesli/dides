@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("second").innerHTML = '2) '+second.toFixed(2);
     document.getElementById("third").innerHTML = '3) '+third.toFixed(2);
 
-    const spam = document.getElementById("spam");
     const pre = document.querySelectorAll('.pre');
     const during = document.querySelectorAll('.during');
     const post = document.querySelectorAll('.post');
@@ -70,8 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (ratingend > 4.5) {
                     document.getElementById("quote").innerHTML = '"You could use a punch up right there. Thats upvotes from quality people"';
                 }     
-                
-                
+
                 during.forEach(function(element) {
                     element.style.transform = "translateX(100vw)"; });
                 post.forEach(function(element) {
@@ -98,13 +96,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             } else {
                 document.getElementById("spam").addEventListener("click", function() {
-                    if (rating < 50) {
-                    rating += 0.05; 
+                    if (ratingend < 4.9) {
+                    rating += 0.012; 
                 }
                 });
                 console.log(timeLeft+' seconds remaining');
                 timeLeft -= 0.05;
-                rating *= 0.95;
+                rating *= 0.98;
                 document.getElementById("Countdown").innerHTML = 'Time left: ' + Math.ceil(timeLeft) + 's';
                 ratingend = rating / 10 + 1;
                 document.getElementById("rat").innerHTML = ratingend.toFixed(1);

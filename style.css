@@ -169,9 +169,38 @@ body {
     align-content: space-evenly;
     justify-content: start;
     justify-items: center;
-    font-weight: 100;
     font-size: 20pt;
     color: lightpink;
+}
+
+.title {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+    color: lightpink;
+    font-size: 70pt;
+    font-weight: 300;
+}
+
+.series {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: start;
+    color: lightpink;
+    font-size: 20pt;
+    font-weight: 200;
+}
+
+.name {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: center;
+    color: lightpink;
+    font-size: 20pt;
+    font-weight: 200;
 }
 
 .backbutton {
