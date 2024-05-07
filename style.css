@@ -8,7 +8,7 @@ body {
     color: #1d1d1d;
 }
 
-.parent {
+.bigbossgrid {
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -16,18 +16,26 @@ body {
     grid-template-rows: 10% 10% 30% 30% 10% 10%;
 }
 
-.rating {
-    display: grid;
-    grid-column: 1/4;
-    grid-row: 4/5;
-    font-weight: 100;
-    font-size: 120pt;
+.pre {
+    transform: translateX(0vw);
 }
 
-p {
-    color: #1d1d1d;
-    font-weight: 100;
-    font-size: 20pt;
+.text1 {
+    font-size: 72pt;
+    font-weight: 500;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.text2 {
+    font-size: 30pt;
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
 }
 
 .button {
@@ -36,12 +44,153 @@ p {
     background-color: rgb(255, 241, 241);
     border-radius: 200px;
     text-align: center;
+    z-index: 1;
+
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/4;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.buttontext {
+    font-size: 50pt;
+    padding-top: 110px;
+}
+
+.during {
+    transform: translateX(100vw);
+}
+
+.starttimercircle {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 241, 241);
+    border-radius: 200px;
+    text-align: center;
+    z-index: 3;
+
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/4;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.starttimer {
+    font-size: 100pt;
+    padding-top: 75px;
+}
+
+.ratingtext {
+    font-size: 30pt;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    align-self: end;
+    justify-self: center;
+}
+
+.rating {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/4;
+    justify-self: center;
+    font-weight: 100;
+    font-size: 120pt;
 }
 
 .spam {
     width: 300px;
     height: 300px;
-    background-color: rgb(255, 221, 221);
+    background-color: rgb(255, 241, 241);
     border-radius: 200px;
+    z-index: 1;
+
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.ct {
+    font-size: 20pt;
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.post {
     transform: translateX(100vw);
+}
+
+.yourratingtext {
+    font-size: 30pt;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    align-self: end;
+    justify-self: center;
+}
+
+.yourrating {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: center;
+    font-weight: 100;
+    font-size: 120pt;
+}
+
+.quote {
+    font-size: 15pt;
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.balken {
+    display: grid;
+    grid-row: 1/7;
+    grid-column: 1/3;
+    background-color: #1d1d1d;
+}
+
+.scoreboard {
+    display: grid;
+    grid-row: 4/6;
+    grid-column: 2/3;
+
+    align-content: space-evenly;
+    justify-content: start;
+    justify-items: center;
+    font-weight: 100;
+    font-size: 20pt;
+    color: lightpink;
+}
+
+.backbutton {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 241, 241);
+    border-radius: 200px;
+    text-align: center;
+    z-index: 3;
+
+    display: grid;
+    grid-row: 4/6;
+    grid-column: 3/4;
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: 100px;
+}
+
+.backbuttontext {
+    font-size: 30pt;
+    padding-top: 80px;
 }
