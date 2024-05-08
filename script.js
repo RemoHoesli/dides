@@ -36,6 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var timerId = setInterval(countdown, 50);
     
         function countdown() {
+            if (timeLeft < 13) {
+                document.getElementById("starttimer").innerHTML = '3';
+
+            }
             if (timeLeft < 12) {
                 document.getElementById("starttimer").innerHTML = '2';
 
