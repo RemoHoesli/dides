@@ -215,7 +215,7 @@ body {
     background-color: rgb(255, 241, 241);
     border-radius: 200px;
     text-align: center;
-    z-index: 3;
+    z-index: 2;
 
     display: grid;
     grid-row: 4/6;
@@ -226,11 +226,17 @@ body {
 }
 
 .backbuttontext {
+    z-index: 3;
     font-size: 30pt;
-    padding-top: 80px;
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 3/4;
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: 123px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .text2 {
         font-size: 3vw;
         display: grid;
@@ -262,8 +268,8 @@ body {
 
 
     .backbutton {
-        width: 200px;
-        height: 200px;
+        width: 40vw;
+        height: 40vw;
         background-color: rgb(255, 241, 241);
         border-radius: 200px;
         text-align: center;
@@ -271,15 +277,18 @@ body {
     
         display: grid;
         grid-row: 3/4;
-        grid-column: 3/4;
+        grid-column: 1/4;
         align-self: center;
         justify-self: center;
-        margin-right: 100px;
     }
     
     .backbuttontext {
-        font-size: 30pt;
-        padding-top: 80px;
+        font-size: 7vw;
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
     }
 
     .balken {
@@ -295,7 +304,7 @@ body {
         align-self: center;
         justify-self: center;
         color: lightpink;
-        font-size: 20vw;
+        font-size: 15vw;
         font-weight: 300;
     }
     .series {
@@ -305,7 +314,7 @@ body {
         align-self: start;
         justify-self: center;
         color: lightpink;
-        font-size: 2tvw;
+        font-size: 5vw;
         font-weight: 200;
     }   
     .name {
@@ -315,7 +324,7 @@ body {
         align-self: center;
         justify-self: center;
         color: lightpink;
-        font-size: 20pt;
+        font-size: 5vw;
         font-weight: 200;
     }
     .yourratingtext {
@@ -329,10 +338,10 @@ body {
     }    
     .yourrating {
         display: grid;
-        grid-row: 4/5;
+        grid-row: 4/6;
         grid-column: 1/4;
         justify-self: center;
-        align-self: end;
+        align-self: center;
         font-weight: 100;
         font-size: 120pt;
     }
