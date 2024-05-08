@@ -291,8 +291,8 @@ body {
     }
 
     .backbutton {
-        width: 40vw;
-        height: 40vw;
+        width: 30vw;
+        height: 30vw;
         background-color: rgb(255, 241, 241);
         border-radius: 200px;
         text-align: center;
@@ -306,7 +306,7 @@ body {
     }
     
     .backbuttontext {
-        font-size: 7vw;
+        font-size: 5vw;
         display: grid;
         grid-row: 3/4;
         grid-column: 1/4;
